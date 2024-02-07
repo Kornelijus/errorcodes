@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "errorcodes"
-version = "0.0.1"
+version = "0.0.3"
 description = "Library that provides utilities for defining error codes for your application."
 authors = ["Kornelijus Tvarijanavičius <kornelijus@tvaria.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/kornelijus/errorcode"
-repository = "https://github.com/kornelijus/errorcode"
+homepage = "https://github.com/kornelijus/errorcodes"
+repository = "https://github.com/kornelijus/errorcodes"
 classifiers = ["Development Status :: 1 - Planning"]
 
 
