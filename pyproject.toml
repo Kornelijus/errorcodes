@@ -10,8 +10,35 @@ repository = "https://github.com/kornelijus/errorcodes"
 classifiers = ["Development Status :: 1 - Planning"]
 
 
+[tool.poetry.scripts]
+test = "scripts.poetry:test"
+check = "scripts.poetry:check"
+format = "scripts.poetry:format"
+
 [tool.poetry.dependencies]
 python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+pytest = "^8.0.0"
+mypy = "^1.8.0"
+
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py39"
+
+
+[tool.mypy]
+strict = true
+
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+check_untyped_defs = true
 
 
 [build-system]
