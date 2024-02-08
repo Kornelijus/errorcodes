@@ -1,0 +1,5 @@
+{
+  "[json|jsonc]": {
+    "editor.tabSize": 2
+  }
+}
